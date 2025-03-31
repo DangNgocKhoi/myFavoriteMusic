@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./asset/css.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="app">
+        <div class="dashboard">
+            <div class="dashboard__search-bar">
+                <input type="text" id="dashboard__search" class="dashboard__search" placeholder="Tìm kiếm bái hát và ca sĩ">
+                <label style="line-height: 0;" for="dashboard__search">
+                    <i class="ti-search dashboard__search-icon"></i> 
+                </label>
+            </div>
+            <header class="header">
+                <div class="header__title">
+                    <span>Singer playing :</span>
+                    <p class="header__name-singer">name singername singername singername singername singername singername singername singername singer</p>
+                </div>
+        
+                    <div class="header__song-info">
+                        <div class="header__volume ">
+                            <i class="ti-volume header__song-icon header__song-icon-volume"></i>
+                            <input class="header__volum-adjust" type="range" value="70" step="1" min="0" max="100" orient="vertical">
+                        </div>
+                        <h2 class="header__song-name">name mucisname mucisname mucisname mucisname mucisname mucisname mucisname mucisname mucis</h2>
+                        <div class="header__song-option ">
+                            <i class="ti-more  header__song-icon header__song-icon-option"></i>
+                                <ul class="header__song-option-list">
+                                    <li class="header__song-option-item js-header-page-dark ">
+                                        <i class="ti-eye header__song-option-item-icon"></i>
+                                        <p class="dark">Dark mode</p>
+                                        <p class="light">light mode</p>
+                                    </li>
+                                    <li class="header__song-option-item"><i class="ti-upload header__song-option-item-icon"></i><p>Up load song</p></li>
+                                </ul>
+                        </div>
+                    </div>
+            </header> 
+            
+            <div class="header__cd">
+                <div style="background-image: url(./asset/img/coChangTraiVietLenCay.jpg);" class="header__cd-thumb"></div>
+            </div>
+        
+            <div class="header__control">
+                <div class="btn btn-repeat">
+                    <i class="ti-reload"></i>
+                </div>
+
+                <div class="btn btn-prev">
+                    <i class="ti-control-skip-backward"></i>
+                </div>
+
+                <div class="btn btn-toggle-play">
+                    <i class="ti-control-play btn-play"></i>
+                    <i class="ti-control-pause btn-pause"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="ti-control-skip-forward"></i>
+                </div>
+
+                <div class="btn btn-random">
+                    <i class="ti-control-shuffle"></i>
+                </div>
+
+            </div>
+            <input class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+        </div>
+        <ul class="list-song">
+        </ul>
+    </div>
+    <script src="../app/main.js"> </script>
+</body>
+
+
+
+</html>
